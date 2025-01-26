@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function createOverlay(randomImages) {
     const urlParams = new URLSearchParams(window.location.search);
     const isDebug = urlParams.get('debug') === 'true';
-    const overlayBackgroundColor = isDebug ? 'white' : 'transparent';
+    const overlayBackgroundColor = isDebug ?'transparent':'white';
     const container = document.createElement("div");
     container.className = "container1";
     container.innerHTML = `
@@ -72,4 +72,3 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }, 3000);
   }
-  
